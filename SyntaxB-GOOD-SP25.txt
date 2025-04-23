@@ -1,0 +1,28 @@
+PROGRAM GOOD3B;
+
+(* This Part 3B test file should have NO errors! *)
+VAR COUNT, TOTAL, SUM : INTEGER;
+ I : INTEGER;
+ STOP : integer;
+
+BEGIN
+READLN(STOP);
+TOTAL := 12;
+FOR I := 1 TO STOP DO
+  BEGIN
+  TOTAL := TOTAL + I
+  END;
+
+REPEAT
+  TOTAL := TOTAL - 1
+UNTIL TOTAL <= 20;
+
+IF TOTAL > 15 THEN
+  BEGIN
+  WHILE TOTAL > 10 DO 
+    TOTAL := TOTAL - (2 * 1)
+  END
+ELSE
+  IF TOTAL < 12 THEN
+    WRITELN(TOTAL)
+END.

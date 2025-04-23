@@ -1,0 +1,6 @@
+Index  Name                 Purpose    Type       Value
+0      n                    VARIABLE   INTEGERTYPE 10
+1      i                    VARIABLE   INTEGERTYPE 11
+2      product              VARIABLE   INTEGERTYPE 3628800
+3      1                    CONSTANT   INTEGERTYPE 1
+4      $temp                VARIABLE   INTEGERTYPE 1

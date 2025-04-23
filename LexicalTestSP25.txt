@@ -1,0 +1,53 @@
+{Here is the SPRING 2025 Lexical Test file which 
+  has this comment that
+  spans 3 lines, followed by an empty comment }
+{}
+
+amount:=1;
+minor_axis:=a+b-c*21.7/22;
+     123456789112345 (*this int number is 15 chars, truncate int to 6
+                          AND give message *)
+     12.34567891134567 (*this number is 17 chars, but should be 
+                             truncated to 12 in the symbol table, with console 
+                                                 message*)
+hereisareallylongidentifierthatistoolong := 66; {truncate to 20, add to ST
+                                                    give error message}
+hereisareallylongidentifierthatissameasabovewhentruncated := 76.5E-12;
+  109.E+10      12.33E5 
+  12.4 E-2
+
+   *) {<--Orphaned closed comment is just '*' and ')' returned as separate tokens}
+
+                  myString_1 : = "a good string";
+                  string2 := "unfinished string makes an error ;
+
+  {test single #and two char tokens} 
+     # /*^&%+-  some more (   ) (**) ;:=><>=<==<>,[]:.
+(* mixed in reserve words 
+below........................... *)  'single quoted is not a string'
+
+  GoTo JumpOut;  INTEGER TO DO
+        begin  if not then that else nothing
+IF THEN ELSE
+For I := 1 to 100.E7 of float do
+    WRITELN  READLN 
+    BEGIN
+    END   
+  declare  ARRAY 
+   VAR WHILE  PROGRAM module UNIT Label  RePeaT  UNTIL done = TRUE;
+
+  READLN   RETURN
+        FLOAT
+        STRING
+
+reserve writeln.   !.@#$%^&*()_+
+sum := 0.0;
+sum:=sum + 2;
+if 2. is found?
+5.E+
+    7.E-3 {okay}
+(* end of file comes
+   before the end of this 
+   comment-- Lexical framework will throw an Error!
+
+

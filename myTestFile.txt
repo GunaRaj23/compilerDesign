@@ -1,0 +1,30 @@
+PROGRAM SimpleTest;
+VAR
+  x, y: INTEGER;
+  average: FLOAT;
+  message: STRING;
+BEGIN
+  (* Basic operations *)
+  x := 10;
+  y := 20;
+  average := 15.5;
+  message := "Hello, PL25!";
+  
+  (* Simple IF statement *)
+  IF x < y THEN
+    WRITELN("x is less than y");
+  
+  (* Simple loop *)
+  WHILE x > 0 DO
+    BEGIN
+      x := x - 1;
+      y := y + x;
+    END;
+  
+  (* Testing operators *)
+  IF x <> y AND x <= 5 THEN
+    WRITELN("Condition met");
+  
+  (* Testing float with exponent *)
+  average := 1.2E+2;
+END.

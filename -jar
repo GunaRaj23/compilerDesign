@@ -1,0 +1,7 @@
+Index  Name                 Purpose    Type       Value
+0      TestInt              VARIABLE   INTEGERTYPE 27
+1      TestDouble           VARIABLE   FLOATTYPE  42.25
+2      TestString           VARIABLE   STRINGTYPE Nevermind the furthermore...
+3      135                  CONSTANT   INTEGERTYPE 135
+4      3.1415               CONSTANT   FLOATTYPE  3.1415
+5      Please Enter A Value CONSTANT   STRINGTYPE Please Enter A Value
